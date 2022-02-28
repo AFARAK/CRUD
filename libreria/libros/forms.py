@@ -24,6 +24,6 @@ class BookForm(forms.ModelForm):
             'name',
             'year',
             'description',
-            'author'
-            'cost', 
+            'author',
+            'cost'
         ]

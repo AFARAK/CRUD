@@ -17,4 +17,7 @@ class Book(models.Model):
     cost = models.IntegerField()
     author =  models.ForeignKey(Author, on_delete=models.CASCADE)
 
+    def dar_nombre(self):
+        return self.name
+
 

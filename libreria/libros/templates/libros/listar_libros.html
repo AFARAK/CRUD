@@ -10,9 +10,9 @@
 <div class="container lista">
     <ul class="list-group">
         {% for bk in lista %}
-        <li class="list-group-item">{{ bk.dar_nombre }} &nbsp;<a href="{% url 'detalles_libro' bk.name %}" class="btn btn-sm btn-success">Detalles</a>&nbsp;<a href="{% url 'actualizar_libro' bk.name %}" class="btn btn-sm btn-warning">Actualizar</a>&nbsp;<a href="{% url 'borrar_libro' bk.name %}" class="btn btn-sm btn-danger">Eliminar</a></li>
+        <li class="list-group-item">{{ bk.dar_nombre }} &nbsp;<a href="{% url 'detalles_libros' bk.name %}" class="btn btn-sm btn-success">Detalles</a>&nbsp;<a href="{% url 'actualizar_libros' bk.name %}" class="btn btn-sm btn-warning">Actualizar</a>&nbsp;<a href="{% url 'eliminar_libros' bk.name %}" class="btn btn-sm btn-danger">Eliminar</a></li>
         {% endfor %}
     </ul>    
 </div>
 
-{% endblock %}
+{% endblock %} 
