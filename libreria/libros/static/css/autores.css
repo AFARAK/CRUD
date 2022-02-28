@@ -1,0 +1,11 @@
+.lista{
+    margin-top: 20px;
+}
+
+.delete {
+    color: red;
+}
+
+.update{
+    color: rgb(179, 179, 27);
+}

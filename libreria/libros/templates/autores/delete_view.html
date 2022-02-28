@@ -1,0 +1,23 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+{% load static %}
+
+
+{% block headers %}
+<link rel="stylesheet" href="{% static 'css/new_autor.css' %}">
+<title>Delete Autor</title>
+{% endblock %}
+
+{% block content %}
+<div class="container formulario">
+    <form method="POST">
+        <!-- Security token by Django -->
+        {% csrf_token %}
+        Are you want to delete this item ?
+        <input type="submit" value="Yes" />
+        <a href="{% url 'autores' %}">Cancel </a>
+    </form> 
+</div>
+
+{% endblock %}

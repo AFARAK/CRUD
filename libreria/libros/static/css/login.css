@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(83, 83, 83);
+}
+
+.login {
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+    margin-top: 20%;
+    background-color: rgb(131, 131, 131);
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+}

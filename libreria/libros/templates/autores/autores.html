@@ -1,0 +1,19 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+
+{% block headers %}
+<link rel="stylesheet" href="{% static 'css/autores.css' %}">
+<title>Autores</title>
+{% endblock %}
+
+{% block content %}
+<div class="container lista">
+    <ul class="list-group">
+        {% for au in lista %}
+        <li class="list-group-item">{{ au.get_name }} &nbsp;<a href="{% url 'autor_detail' au.id %}" class="btn btn-sm btn-success">Detalles</a>&nbsp;<a href="{% url 'autor_update' au.id %}" class="btn btn-sm btn-warning">actualizar</a>&nbsp;<a href="{% url 'autor_delete' au.id %}" class="btn btn-sm btn-danger">eliminar</a></li>
+        {% endfor %}
+    </ul>    
+</div>
+
+{% endblock %}
